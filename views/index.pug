@@ -1,0 +1,38 @@
+extends layout.pug
+block header
+    title Notification service is #{status}
+block content
+    script
+    .wrapper
+        .main-content
+            .blocks
+                table.ui.celled.striped.table
+                    thead
+                        tr
+                            th(colspan='5')
+                                p Latest Notifications
+                        tr
+                            th
+                                div Date
+                            th
+                                div Channel
+                            th
+                                div Emoji
+                            th
+                                div Message
+                    tbody
+                        each val in logs
+                            tr
+                                td
+                                    div(style="margin-right: 5")= val.datetime
+                                td.collapsing
+                                    div.ui.basic.label(style="margin-right: 5")= '#' + val.channel
+                                td.collapsing
+                                    div(style="margin-right: 5")= val.emoji
+                                td
+                                    div(style="margin-right: 5")= val.message
+
+block foot
+    .wrapper.bottombar
+        .padder
+            h4.ui.header Notification MicroService is #{status}

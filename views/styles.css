@@ -1,0 +1,33 @@
+
+.padder {
+  padding: 10px;
+}
+
+.blockheight{
+  font-size: 16px;
+}
+.topbar{
+  background-color: greenyellow;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+bottombar{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  border-radius: 0px;
+  justify-content: center
+}
